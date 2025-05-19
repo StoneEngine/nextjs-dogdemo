@@ -1,3 +1,4 @@
+"use client";
 import { createLandmarkAction } from "@/actions/actions";
 import { SubmitButton } from "@/components/form/Buttons";
 import CategoryInput from "@/components/form/CategoryInput";
@@ -6,7 +7,12 @@ import FormInput from "@/components/form/FormInput";
 import ImageInput from "@/components/form/ImageInput";
 import ProvinceInput from "@/components/form/ProvinceInput";
 import TextAreaInput from "@/components/form/TextAreaInput";
-import MapLandmark from "@/components/map/MapLandmark";
+
+import dynamic from "next/dynamic";
+
+const MapLandmark = dynamic(() => import("@/components/map/MapLandmark"), {
+  ssr: false,
+});
 // import { currentUser } from "@clerk/nextjs/server";
 // import { redirect } from "next/navigation";
 
