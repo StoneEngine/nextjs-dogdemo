@@ -5,7 +5,7 @@ import {
   Marker,
   Popup,
   TileLayer,
-  useMap,
+  // useMap,
   useMapEvents,
 } from "react-leaflet";
 import L from "leaflet";

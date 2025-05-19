@@ -16,8 +16,6 @@ import { links } from "@/utils/Links";
 import Signoutlinks from "./Signoutlinks";
 import { SignedIn, SignedOut, SignInButton, SignUpButton } from "@clerk/nextjs";
 
-const stone: string = "stone";
-
 const Dropdownlistmenu = () => {
   return (
     <DropdownMenu>
@@ -58,7 +56,6 @@ const Dropdownlistmenu = () => {
           <DropdownMenuItem>
             <Signoutlinks />
           </DropdownMenuItem>
-
         </SignedIn>
       </DropdownMenuContent>
     </DropdownMenu>
